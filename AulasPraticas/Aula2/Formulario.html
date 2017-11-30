@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--comentario  aparece para o usuário, tem que fazer a minimizaçao-->
+<html> <!--define a estrutura do html-->
+
+  <head>
+    <meta charset="utf-8"><!--def da codificação do navegador-->
+    <title> Cadastro de Alunos(as) </title>
+ </head>
+     <body>
+        <form action="validacao.html" method="post"><!--submeter formulário via get não é muito indicado-->
+
+            <label type="nome">Nome</label>
+            <input type="text" name="nome"><br>
+
+            <label type="rua">Rua</label><!--associa o nome dado no servidor  -->
+            <input type="text" name="rua"><br>
+
+            <!--Radio permite  a seleção de uma única opção -->
+            <input type="radio" name="genero" value="F">Feminino<br>
+            <input type="radio" name="genero" value="M">Masculino<br>
+            <input type="radio" name="genero" value="N">Não Binário<br>
+
+            <!--O checkbox permite a seleção de múltiplas opções-->
+            <input type="checkbox" name= "area">Web<br><!--Nomes identicos cria uma estrutura de repeticao para representar-->
+            <input type="checkbox" name= "area">Computação Móvel<br>
+            <input type="checkbox" name = "area">Eletromagnetismo<br>
+            <input type="checkbox" name = "area">Redes II<br>
+            <input type="checkbox" name = "area">Modelagem<br>
+            <!---->
+            <!--Compor opções dentro do select, Seleciona uma opção-->
+            <div id="listaCidades">
+            <select name="cidade">
+               <option value="0">Selecione</option>
+               <option value="1">João Monlevade</option>
+               <option value="2">Itabira</option>
+               <option value="3">Belo Horizonte</option>
+               <option value="4">Ipatinga</option>
+            </select>
+            </div>
+
+            <label type="usuario">Usuário</label>
+            <input type="text" name="usuario"><br>
+
+            <label type="senha">Senha</label>
+            <input type="password" name="senha"><br>
+
+            <input type="range"name="satisfacao"min="0"max="10"><br>
+            <input type="number" name="quantidade"min="0"max="10"><br>
+
+            <input type="date" name= "nascimento">
+            <input type="color" name= "corDeFundo">
+
+
+
+            <input type="submit" value="Cadastrar">
+            <input type="reset" name="Limpar">
+
+        </form><!--elementos serão submetidos do lado do servidor. Tecnicamente não faz nada-->
+        <a href="Aula1.html">Voltar</a>
+     </body>
+
+ </html>
